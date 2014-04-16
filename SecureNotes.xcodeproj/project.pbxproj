@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C1E3A7B18EF2BA60098AF84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1E3A7A18EF2BA60098AF84 /* Foundation.framework */; };
+		6C1E3A7D18EF2BA60098AF84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1E3A7C18EF2BA60098AF84 /* CoreGraphics.framework */; };
+		6C1E3A7F18EF2BA60098AF84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1E3A7E18EF2BA60098AF84 /* UIKit.framework */; };
+		6C1E3A8518EF2BA60098AF84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C1E3A8318EF2BA60098AF84 /* InfoPlist.strings */; };
+		6C1E3A8718EF2BA60098AF84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E3A8618EF2BA60098AF84 /* main.m */; };
+		6C1E3A8B18EF2BA60098AF84 /* LockAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E3A8A18EF2BA60098AF84 /* LockAppDelegate.m */; };
+		6C1E3A8E18EF2BA60098AF84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1E3A8C18EF2BA60098AF84 /* Main.storyboard */; };
+		6C1E3A9318EF2BA60098AF84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C1E3A9218EF2BA60098AF84 /* Images.xcassets */; };
+		6C1E3A9A18EF2BA60098AF84 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1E3A9918EF2BA60098AF84 /* XCTest.framework */; };
+		6C1E3A9B18EF2BA60098AF84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1E3A7A18EF2BA60098AF84 /* Foundation.framework */; };
+		6C1E3A9C18EF2BA60098AF84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1E3A7E18EF2BA60098AF84 /* UIKit.framework */; };
+		6C1E3AA418EF2BA60098AF84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C1E3AA218EF2BA60098AF84 /* InfoPlist.strings */; };
+		6C1E3AA618EF2BA60098AF84 /* SecureNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E3AA518EF2BA60098AF84 /* SecureNotesTests.m */; };
+		6C1E3AB118EF2F560098AF84 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E3AB018EF2F560098AF84 /* LockViewController.m */; };
+		6C1E3ABB18EF546E0098AF84 /* Lock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E3ABA18EF546E0098AF84 /* Lock.m */; };
+		6C1E3ABE18F056860098AF84 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E3ABD18F056860098AF84 /* LoginViewController.m */; };
+		6C558EA218F2EE9500AA5352 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C558EA118F2EE9500AA5352 /* RegistrationViewController.m */; };
+		6C558EA518F2F50B00AA5352 /* LoginUsernameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C558EA418F2F50B00AA5352 /* LoginUsernameViewController.m */; };
+		6C558EA718F312F500AA5352 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C558EA618F312F500AA5352 /* CoreData.framework */; };
+		6C558EAA18F3136D00AA5352 /* SecureNotesData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C558EA818F3136D00AA5352 /* SecureNotesData.xcdatamodeld */; };
+		6C5E607C18FB25B300FCF0AE /* NoteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5E607B18FB25B300FCF0AE /* NoteTableViewController.m */; };
+		6C5E608118FB29F000FCF0AE /* NoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5E608018FB29F000FCF0AE /* NoteDetailViewController.m */; };
+		6C5E60D718FB759F00FCF0AE /* NoteNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5E60D618FB759F00FCF0AE /* NoteNavigationController.m */; };
+		6C78B57F18F76C7C005667DA /* InstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C78B57E18F76C7C005667DA /* InstructionViewController.m */; };
+		6CC1221A18FDA6FB00323866 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1221918FDA6FB00323866 /* SettingsTableViewController.m */; };
+		6CC1221D18FDD1E200323866 /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1221C18FDD1E200323866 /* ImagePickerViewController.m */; };
+		6CC1222018FDDCA500323866 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1221F18FDDCA500323866 /* Login.m */; };
+		6CC1222318FDDCA600323866 /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1222218FDDCA600323866 /* Notes.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C1E3A9D18EF2BA60098AF84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C1E3A6F18EF2BA60098AF84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C1E3A7618EF2BA60098AF84;
+			remoteInfo = SecureNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C1E3A7718EF2BA60098AF84 /* SecureNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1E3A7A18EF2BA60098AF84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6C1E3A7C18EF2BA60098AF84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6C1E3A7E18EF2BA60098AF84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6C1E3A8218EF2BA60098AF84 /* SecureNotes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecureNotes-Info.plist"; sourceTree = "<group>"; };
+		6C1E3A8418EF2BA60098AF84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6C1E3A8618EF2BA60098AF84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6C1E3A8818EF2BA60098AF84 /* SecureNotes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SecureNotes-Prefix.pch"; sourceTree = "<group>"; };
+		6C1E3A8918EF2BA60098AF84 /* LockAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockAppDelegate.h; sourceTree = "<group>"; };
+		6C1E3A8A18EF2BA60098AF84 /* LockAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockAppDelegate.m; sourceTree = "<group>"; };
+		6C1E3A8D18EF2BA60098AF84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C1E3A9218EF2BA60098AF84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6C1E3A9818EF2BA60098AF84 /* SecureNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1E3A9918EF2BA60098AF84 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6C1E3AA118EF2BA60098AF84 /* SecureNotesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecureNotesTests-Info.plist"; sourceTree = "<group>"; };
+		6C1E3AA318EF2BA60098AF84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6C1E3AA518EF2BA60098AF84 /* SecureNotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureNotesTests.m; sourceTree = "<group>"; };
+		6C1E3AAF18EF2F560098AF84 /* LockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
+		6C1E3AB018EF2F560098AF84 /* LockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
+		6C1E3AB918EF546E0098AF84 /* Lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lock.h; sourceTree = "<group>"; };
+		6C1E3ABA18EF546E0098AF84 /* Lock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lock.m; sourceTree = "<group>"; };
+		6C1E3ABC18F056860098AF84 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6C1E3ABD18F056860098AF84 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6C558EA018F2EE9500AA5352 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		6C558EA118F2EE9500AA5352 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
+		6C558EA318F2F50B00AA5352 /* LoginUsernameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginUsernameViewController.h; sourceTree = "<group>"; };
+		6C558EA418F2F50B00AA5352 /* LoginUsernameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginUsernameViewController.m; sourceTree = "<group>"; };
+		6C558EA618F312F500AA5352 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6C558EA918F3136D00AA5352 /* SecureNotesData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SecureNotesData.xcdatamodel; sourceTree = "<group>"; };
+		6C5E607A18FB25B300FCF0AE /* NoteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteTableViewController.h; sourceTree = "<group>"; };
+		6C5E607B18FB25B300FCF0AE /* NoteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteTableViewController.m; sourceTree = "<group>"; };
+		6C5E607F18FB29F000FCF0AE /* NoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetailViewController.h; sourceTree = "<group>"; };
+		6C5E608018FB29F000FCF0AE /* NoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDetailViewController.m; sourceTree = "<group>"; };
+		6C5E60D518FB759F00FCF0AE /* NoteNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteNavigationController.h; sourceTree = "<group>"; };
+		6C5E60D618FB759F00FCF0AE /* NoteNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteNavigationController.m; sourceTree = "<group>"; };
+		6C78B57D18F76C7C005667DA /* InstructionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstructionViewController.h; path = ../InstructionViewController.h; sourceTree = "<group>"; };
+		6C78B57E18F76C7C005667DA /* InstructionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstructionViewController.m; path = ../InstructionViewController.m; sourceTree = "<group>"; };
+		6CC1221818FDA6FB00323866 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		6CC1221918FDA6FB00323866 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		6CC1221B18FDD1E200323866 /* ImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerViewController.h; sourceTree = "<group>"; };
+		6CC1221C18FDD1E200323866 /* ImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerViewController.m; sourceTree = "<group>"; };
+		6CC1221E18FDDCA500323866 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		6CC1221F18FDDCA500323866 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		6CC1222118FDDCA600323866 /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
+		6CC1222218FDDCA600323866 /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notes.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C1E3A7418EF2BA60098AF84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C558EA718F312F500AA5352 /* CoreData.framework in Frameworks */,
+				6C1E3A7D18EF2BA60098AF84 /* CoreGraphics.framework in Frameworks */,
+				6C1E3A7F18EF2BA60098AF84 /* UIKit.framework in Frameworks */,
+				6C1E3A7B18EF2BA60098AF84 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1E3A9518EF2BA60098AF84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1E3A9A18EF2BA60098AF84 /* XCTest.framework in Frameworks */,
+				6C1E3A9C18EF2BA60098AF84 /* UIKit.framework in Frameworks */,
+				6C1E3A9B18EF2BA60098AF84 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C1E3A6E18EF2BA60098AF84 = {
+			isa = PBXGroup;
+			children = (
+				6C1E3A8018EF2BA60098AF84 /* SecureNotes */,
+				6C1E3A9F18EF2BA60098AF84 /* SecureNotesTests */,
+				6C1E3A7918EF2BA60098AF84 /* Frameworks */,
+				6C1E3A7818EF2BA60098AF84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C1E3A7818EF2BA60098AF84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C1E3A7718EF2BA60098AF84 /* SecureNotes.app */,
+				6C1E3A9818EF2BA60098AF84 /* SecureNotesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C1E3A7918EF2BA60098AF84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C558EA618F312F500AA5352 /* CoreData.framework */,
+				6C1E3A7A18EF2BA60098AF84 /* Foundation.framework */,
+				6C1E3A7C18EF2BA60098AF84 /* CoreGraphics.framework */,
+				6C1E3A7E18EF2BA60098AF84 /* UIKit.framework */,
+				6C1E3A9918EF2BA60098AF84 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C1E3A8018EF2BA60098AF84 /* SecureNotes */ = {
+			isa = PBXGroup;
+			children = (
+				6C1E3A8C18EF2BA60098AF84 /* Main.storyboard */,
+				6C5E607E18FB25FB00FCF0AE /* Notes */,
+				6C5E607D18FB25C500FCF0AE /* Register/Login */,
+				6C1E3AB218EF2F680098AF84 /* Model */,
+				6C1E3A9218EF2BA60098AF84 /* Images.xcassets */,
+				6C1E3A8118EF2BA60098AF84 /* Supporting Files */,
+			);
+			path = SecureNotes;
+			sourceTree = "<group>";
+		};
+		6C1E3A8118EF2BA60098AF84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C1E3A8918EF2BA60098AF84 /* LockAppDelegate.h */,
+				6C1E3A8A18EF2BA60098AF84 /* LockAppDelegate.m */,
+				6C1E3A8218EF2BA60098AF84 /* SecureNotes-Info.plist */,
+				6C1E3A8318EF2BA60098AF84 /* InfoPlist.strings */,
+				6C1E3A8618EF2BA60098AF84 /* main.m */,
+				6C1E3A8818EF2BA60098AF84 /* SecureNotes-Prefix.pch */,
+				6C558EA818F3136D00AA5352 /* SecureNotesData.xcdatamodeld */,
+				6CC1222118FDDCA600323866 /* Notes.h */,
+				6CC1222218FDDCA600323866 /* Notes.m */,
+				6CC1221E18FDDCA500323866 /* Login.h */,
+				6CC1221F18FDDCA500323866 /* Login.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C1E3A9F18EF2BA60098AF84 /* SecureNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C1E3AA518EF2BA60098AF84 /* SecureNotesTests.m */,
+				6C1E3AA018EF2BA60098AF84 /* Supporting Files */,
+			);
+			path = SecureNotesTests;
+			sourceTree = "<group>";
+		};
+		6C1E3AA018EF2BA60098AF84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C1E3AA118EF2BA60098AF84 /* SecureNotesTests-Info.plist */,
+				6C1E3AA218EF2BA60098AF84 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C1E3AB218EF2F680098AF84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C1E3AB918EF546E0098AF84 /* Lock.h */,
+				6C1E3ABA18EF546E0098AF84 /* Lock.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6C5E607D18FB25C500FCF0AE /* Register/Login */ = {
+			isa = PBXGroup;
+			children = (
+				6CC1221B18FDD1E200323866 /* ImagePickerViewController.h */,
+				6CC1221C18FDD1E200323866 /* ImagePickerViewController.m */,
+				6C78B57D18F76C7C005667DA /* InstructionViewController.h */,
+				6C78B57E18F76C7C005667DA /* InstructionViewController.m */,
+				6C558EA318F2F50B00AA5352 /* LoginUsernameViewController.h */,
+				6C558EA418F2F50B00AA5352 /* LoginUsernameViewController.m */,
+				6C558EA018F2EE9500AA5352 /* RegistrationViewController.h */,
+				6C558EA118F2EE9500AA5352 /* RegistrationViewController.m */,
+				6C1E3ABC18F056860098AF84 /* LoginViewController.h */,
+				6C1E3ABD18F056860098AF84 /* LoginViewController.m */,
+				6C1E3AAF18EF2F560098AF84 /* LockViewController.h */,
+				6C1E3AB018EF2F560098AF84 /* LockViewController.m */,
+			);
+			name = Register/Login;
+			sourceTree = "<group>";
+		};
+		6C5E607E18FB25FB00FCF0AE /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				6CC1221818FDA6FB00323866 /* SettingsTableViewController.h */,
+				6CC1221918FDA6FB00323866 /* SettingsTableViewController.m */,
+				6C5E60D518FB759F00FCF0AE /* NoteNavigationController.h */,
+				6C5E60D618FB759F00FCF0AE /* NoteNavigationController.m */,
+				6C5E607F18FB29F000FCF0AE /* NoteDetailViewController.h */,
+				6C5E608018FB29F000FCF0AE /* NoteDetailViewController.m */,
+				6C5E607A18FB25B300FCF0AE /* NoteTableViewController.h */,
+				6C5E607B18FB25B300FCF0AE /* NoteTableViewController.m */,
+			);
+			name = Notes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C1E3A7618EF2BA60098AF84 /* SecureNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C1E3AA918EF2BA60098AF84 /* Build configuration list for PBXNativeTarget "SecureNotes" */;
+			buildPhases = (
+				6C1E3A7318EF2BA60098AF84 /* Sources */,
+				6C1E3A7418EF2BA60098AF84 /* Frameworks */,
+				6C1E3A7518EF2BA60098AF84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecureNotes;
+			productName = SecureNotes;
+			productReference = 6C1E3A7718EF2BA60098AF84 /* SecureNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C1E3A9718EF2BA60098AF84 /* SecureNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C1E3AAC18EF2BA60098AF84 /* Build configuration list for PBXNativeTarget "SecureNotesTests" */;
+			buildPhases = (
+				6C1E3A9418EF2BA60098AF84 /* Sources */,
+				6C1E3A9518EF2BA60098AF84 /* Frameworks */,
+				6C1E3A9618EF2BA60098AF84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C1E3A9E18EF2BA60098AF84 /* PBXTargetDependency */,
+			);
+			name = SecureNotesTests;
+			productName = SecureNotesTests;
+			productReference = 6C1E3A9818EF2BA60098AF84 /* SecureNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C1E3A6F18EF2BA60098AF84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Lock;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Max's Awesome App House";
+				TargetAttributes = {
+					6C1E3A9718EF2BA60098AF84 = {
+						TestTargetID = 6C1E3A7618EF2BA60098AF84;
+					};
+				};
+			};
+			buildConfigurationList = 6C1E3A7218EF2BA60098AF84 /* Build configuration list for PBXProject "SecureNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C1E3A6E18EF2BA60098AF84;
+			productRefGroup = 6C1E3A7818EF2BA60098AF84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C1E3A7618EF2BA60098AF84 /* SecureNotes */,
+				6C1E3A9718EF2BA60098AF84 /* SecureNotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C1E3A7518EF2BA60098AF84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1E3A9318EF2BA60098AF84 /* Images.xcassets in Resources */,
+				6C1E3A8518EF2BA60098AF84 /* InfoPlist.strings in Resources */,
+				6C1E3A8E18EF2BA60098AF84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1E3A9618EF2BA60098AF84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1E3AA418EF2BA60098AF84 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C1E3A7318EF2BA60098AF84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C558EA518F2F50B00AA5352 /* LoginUsernameViewController.m in Sources */,
+				6C1E3A8718EF2BA60098AF84 /* main.m in Sources */,
+				6C5E60D718FB759F00FCF0AE /* NoteNavigationController.m in Sources */,
+				6C1E3ABB18EF546E0098AF84 /* Lock.m in Sources */,
+				6CC1221D18FDD1E200323866 /* ImagePickerViewController.m in Sources */,
+				6C5E607C18FB25B300FCF0AE /* NoteTableViewController.m in Sources */,
+				6C5E608118FB29F000FCF0AE /* NoteDetailViewController.m in Sources */,
+				6C1E3ABE18F056860098AF84 /* LoginViewController.m in Sources */,
+				6C1E3AB118EF2F560098AF84 /* LockViewController.m in Sources */,
+				6C558EAA18F3136D00AA5352 /* SecureNotesData.xcdatamodeld in Sources */,
+				6CC1222018FDDCA500323866 /* Login.m in Sources */,
+				6CC1222318FDDCA600323866 /* Notes.m in Sources */,
+				6C1E3A8B18EF2BA60098AF84 /* LockAppDelegate.m in Sources */,
+				6CC1221A18FDA6FB00323866 /* SettingsTableViewController.m in Sources */,
+				6C558EA218F2EE9500AA5352 /* RegistrationViewController.m in Sources */,
+				6C78B57F18F76C7C005667DA /* InstructionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1E3A9418EF2BA60098AF84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1E3AA618EF2BA60098AF84 /* SecureNotesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C1E3A9E18EF2BA60098AF84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C1E3A7618EF2BA60098AF84 /* SecureNotes */;
+			targetProxy = 6C1E3A9D18EF2BA60098AF84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C1E3A8318EF2BA60098AF84 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C1E3A8418EF2BA60098AF84 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6C1E3A8C18EF2BA60098AF84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C1E3A8D18EF2BA60098AF84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C1E3AA218EF2BA60098AF84 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C1E3AA318EF2BA60098AF84 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C1E3AA718EF2BA60098AF84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6C1E3AA818EF2BA60098AF84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C1E3AAA18EF2BA60098AF84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecureNotes/SecureNotes-Prefix.pch";
+				INFOPLIST_FILE = "SecureNotes/SecureNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6C1E3AAB18EF2BA60098AF84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecureNotes/SecureNotes-Prefix.pch";
+				INFOPLIST_FILE = "SecureNotes/SecureNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6C1E3AAD18EF2BA60098AF84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecureNotes.app/SecureNotes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecureNotes/SecureNotes-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SecureNotesTests/SecureNotesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6C1E3AAE18EF2BA60098AF84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecureNotes.app/SecureNotes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecureNotes/SecureNotes-Prefix.pch";
+				INFOPLIST_FILE = "SecureNotesTests/SecureNotesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C1E3A7218EF2BA60098AF84 /* Build configuration list for PBXProject "SecureNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1E3AA718EF2BA60098AF84 /* Debug */,
+				6C1E3AA818EF2BA60098AF84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C1E3AA918EF2BA60098AF84 /* Build configuration list for PBXNativeTarget "SecureNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1E3AAA18EF2BA60098AF84 /* Debug */,
+				6C1E3AAB18EF2BA60098AF84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C1E3AAC18EF2BA60098AF84 /* Build configuration list for PBXNativeTarget "SecureNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1E3AAD18EF2BA60098AF84 /* Debug */,
+				6C1E3AAE18EF2BA60098AF84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6C558EA818F3136D00AA5352 /* SecureNotesData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6C558EA918F3136D00AA5352 /* SecureNotesData.xcdatamodel */,
+			);
+			currentVersion = 6C558EA918F3136D00AA5352 /* SecureNotesData.xcdatamodel */;
+			path = SecureNotesData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6C1E3A6F18EF2BA60098AF84 /* Project object */;
+}

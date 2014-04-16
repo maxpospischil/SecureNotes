@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Login" representedClassName="Login" syncable="YES">
+        <attribute name="picture" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="point1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="point1region" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="point2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="point2region" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="point3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="point3region" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="point4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="point4region" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notes" inverseName="user" inverseEntity="Notes" syncable="YES"/>
+    </entity>
+    <entity name="Notes" representedClassName="Notes" syncable="YES">
+        <attribute name="noteText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Login" inverseName="notes" inverseEntity="Login" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Login" positionX="-63" positionY="-18" width="128" height="210"/>
+        <element name="Notes" positionX="133" positionY="27" width="128" height="88"/>
+    </elements>
+</model>
