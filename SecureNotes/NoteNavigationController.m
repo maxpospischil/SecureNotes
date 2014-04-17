@@ -15,7 +15,30 @@
 
 @end
 
-@implementation NoteNavigationController
+@implementation NoteNavigationController {
+    void (^_completion)();
+}
+
+
+- (void) navigationController:(UINavigationController *) navigationController didShowViewController:(UIViewController *) viewController animated:(BOOL) animated {
+    if (_completion) {
+        _completion();
+        _completion = nil;
+    }
+}
+
+- (UIViewController *) popViewControllerAnimated:(BOOL) animated completion:(void (^)()) completion {
+    _completion = completion;
+    return [super popViewControllerAnimated:animated];
+}
+
+- (id) initWithRootViewController:(UIViewController *) rootViewController {
+    self = [super initWithRootViewController:rootViewController];
+    if (self) {
+        self.delegate = self;
+    }
+    return self;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

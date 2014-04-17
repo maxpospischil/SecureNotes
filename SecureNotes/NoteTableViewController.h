@@ -15,4 +15,6 @@
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) NSString *username;
 
+
+
 @end

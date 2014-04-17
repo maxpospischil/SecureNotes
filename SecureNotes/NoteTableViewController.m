@@ -13,7 +13,6 @@
 
 @interface NoteTableViewController ()
 
-@property (weak, nonatomic) IBOutlet UISearchBar *search;
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
@@ -44,7 +43,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithTitle:@"New" style:UIBarButtonItemStylePlain target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
 }
 
@@ -56,6 +55,7 @@
 
 - (void)insertNewObject:(id)sender
 {
+    NSLog(@"Sender: %@", sender);
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
     Notes *newNote = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
@@ -75,6 +75,13 @@
         abort();
     }
     [self performSegueWithIdentifier:@"newNote" sender:sender];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+    [self.navigationController setToolbarHidden:NO animated:YES];
 }
 
 #pragma mark - Table View
@@ -255,12 +262,6 @@
 {
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [[object valueForKey:@"noteText"] description];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [self.tableView reloadData];
-    [self.navigationController setToolbarHidden:NO animated:YES];
 }
 
 @end

@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NoteNavigationController : UINavigationController
+@interface NoteNavigationController : UINavigationController <UINavigationControllerDelegate>
 
 @property (nonatomic, strong) NSString *username;
+
+- (UIViewController *) popViewControllerAnimated:(BOOL) animated completion:(void (^)()) completion;
 
 @end

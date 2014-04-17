@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
+@property (assign, nonatomic) NoteTableViewController *noteTableViewController;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *shareButton;
 - (void)configureView;
 
 @end
@@ -25,6 +27,14 @@
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Delete" otherButtonTitles:nil, nil];
     
     [actionSheet showInView:self.view];
+}
+
+- (IBAction)shareButtonPressed:(id)sender {
+    UISimpleTextPrintFormatter *printData = [[UISimpleTextPrintFormatter alloc]
+                                             initWithText:self.noteText.text];
+    NSArray *objectsToShare = [[NSArray alloc] initWithObjects:self.noteText.text, printData, nil];
+    UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:objectsToShare applicationActivities:nil];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
