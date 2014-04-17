@@ -33,6 +33,9 @@
     }
     return context;
 }
+- (IBAction)usePhoto:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)viewWillDisappear:(BOOL)animated
 {

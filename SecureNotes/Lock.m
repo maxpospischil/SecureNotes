@@ -8,7 +8,7 @@
 
 #import "Lock.h"
 #import <CommonCrypto/CommonDigest.h>
-#define RVALUE 10
+#define RVALUE 12
 
 
 
@@ -212,14 +212,14 @@
     } else if (4*r <= ((int)point.x % q) && ((int)point.x % q)< q){
         xregion = 2;
     }
-    if (yregion != 0 && xregion !=0){
-        saferegion = 0;
+    if (yregion != 2 && xregion != 2){
+        saferegion = 2;
     } else if (yregion != 1 && xregion !=1){
         saferegion = 1;
-    } else if (yregion != 2 && xregion !=2){
-        saferegion = 2;
+    } else if (yregion != 0 && xregion != 0){
+        saferegion = 0;
     }
-    if (saferegion == -1){
+    if (xregion == -1 || yregion == -1){
         NSLog(@"Error in finding region of point!");
         abort();
     }

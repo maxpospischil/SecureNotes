@@ -71,6 +71,7 @@
 		6C1E3ABA18EF546E0098AF84 /* Lock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lock.m; sourceTree = "<group>"; };
 		6C1E3ABC18F056860098AF84 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		6C1E3ABD18F056860098AF84 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6C4E4B7818FF2416000403E9 /* SecureNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SecureNotes.entitlements; sourceTree = "<group>"; };
 		6C558EA018F2EE9500AA5352 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
 		6C558EA118F2EE9500AA5352 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
 		6C558EA318F2F50B00AA5352 /* LoginUsernameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginUsernameViewController.h; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 		6C1E3A8018EF2BA60098AF84 /* SecureNotes */ = {
 			isa = PBXGroup;
 			children = (
+				6C4E4B7818FF2416000403E9 /* SecureNotes.entitlements */,
 				6C1E3A8C18EF2BA60098AF84 /* Main.storyboard */,
 				6C5E607E18FB25FB00FCF0AE /* Notes */,
 				6C5E607D18FB25C500FCF0AE /* Register/Login */,
@@ -291,6 +293,14 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Max's Awesome App House";
 				TargetAttributes = {
+					6C1E3A7618EF2BA60098AF84 = {
+						DevelopmentTeam = 73CP54E7ET;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
 					6C1E3A9718EF2BA60098AF84 = {
 						TestTargetID = 6C1E3A7618EF2BA60098AF84;
 					};
@@ -481,10 +491,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecureNotes/SecureNotes-Prefix.pch";
 				INFOPLIST_FILE = "SecureNotes/SecureNotes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -494,10 +507,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecureNotes/SecureNotes-Prefix.pch";
 				INFOPLIST_FILE = "SecureNotes/SecureNotes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

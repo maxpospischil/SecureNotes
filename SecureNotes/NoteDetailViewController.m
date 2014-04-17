@@ -22,8 +22,17 @@
 #pragma mark - Managing the detail item
 
 - (IBAction)deleteNote:(id)sender {
-    [self.context deleteObject:self.noteDetail];
-    [self.navigationController popViewControllerAnimated:YES];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Delete" otherButtonTitles:nil, nil];
+    
+    [actionSheet showInView:self.view];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Delete"]){
+        [self.context deleteObject:self.noteDetail];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 - (IBAction)doneEditing:(id)sender {

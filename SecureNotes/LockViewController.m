@@ -92,6 +92,7 @@
     
     if ([self.kindOfLock isEqualToString:@"CHANGE PICTUREPASS"]){
         [self.editButton setEnabled:NO];
+        [[self navigationController] setToolbarHidden:YES animated:NO];
     }
     
     if ([self.kindOfLock isEqualToString:@"LOGIN"]){

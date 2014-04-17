@@ -30,6 +30,8 @@
 }
 
 - (IBAction)enterPicturePass:(id)sender {
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setObject:[NSString stringWithFormat:@"%@",self.usernameTextField.text] forKey:@"username"];
     NSManagedObjectContext *context = [self managedObjectContext];
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
@@ -65,6 +67,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSString *username = [prefs stringForKey:@"username"];
+    if (username){
+        self.usernameTextField.text = username;
+    }
     self.tryAgainLabel.text = @"";
     /* Take away back arrow text */
     UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];

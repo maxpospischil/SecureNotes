@@ -29,6 +29,9 @@
 
 - (IBAction)createUser:(id)sender {
     
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setObject:[NSString stringWithFormat:@"%@",self.usernameTextField.text] forKey:@"username"];
+    
     NSManagedObjectContext *context = [self managedObjectContext];
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];

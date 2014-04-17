@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Notes.h"
 
-@interface NoteDetailViewController : UIViewController
+@interface NoteDetailViewController : UIViewController <UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *noteText;
 
