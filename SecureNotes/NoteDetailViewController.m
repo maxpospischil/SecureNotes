@@ -82,6 +82,7 @@
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
         }
+        [self configureView];
     }
 }
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsTableViewController : UITableViewController
+@interface SettingsTableViewController : UITableViewController <UIActionSheetDelegate>
 
 @property (strong, nonatomic) NSString *username;
 

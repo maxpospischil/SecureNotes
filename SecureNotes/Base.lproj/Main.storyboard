@@ -292,10 +292,19 @@
                     <navigationItem key="navigationItem" title="Notes" id="DcT-eq-aah"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="searchDisplayController" destination="90c-Ps-syd" id="spf-at-cHd"/>
                         <segue destination="K1H-TC-U7W" kind="push" identifier="newNote" id="NGx-Y8-BLT"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2Z-Vd-3KY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="90c-Ps-syd">
+                    <connections>
+                        <outlet property="delegate" destination="TyU-4C-DLn" id="d1i-Ew-U6p"/>
+                        <outlet property="searchContentsController" destination="TyU-4C-DLn" id="GoK-RG-b4Y"/>
+                        <outlet property="searchResultsDataSource" destination="TyU-4C-DLn" id="69C-hy-yUJ"/>
+                        <outlet property="searchResultsDelegate" destination="TyU-4C-DLn" id="ZQt-EO-uzT"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1883" y="91"/>
         </scene>
@@ -347,6 +356,31 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="n7N-AK-61C">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ylz-hG-8R6">
+                                        <rect key="frame" x="0.0" y="207" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ylz-hG-8R6" id="oYJ-ss-D0t">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vld-rJ-VHL">
+                                                    <rect key="frame" x="0.0" y="7" width="320" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Delete Account">
+                                                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="deleteAccount:" destination="0s7-gj-ZET" eventType="touchUpInside" id="S5P-4q-G0M"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="0s7-gj-ZET" id="GLB-vx-KhV"/>
@@ -356,11 +390,12 @@
                     <navigationItem key="navigationItem" title="Settings" id="7eA-Ji-GoE"/>
                     <connections>
                         <outlet property="usernameLabel" destination="OEa-go-2rz" id="6kz-Qo-yya"/>
+                        <segue destination="xmX-aT-Noj" kind="modal" identifier="Delete Account" modalTransitionStyle="crossDissolve" id="c9I-Xy-QAs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Go0-cC-4nx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2354" y="-595"/>
+            <point key="canvasLocation" x="2355" y="-605"/>
         </scene>
         <!--Note Detail View Controller-->
         <scene sceneID="I2S-s2-xPt">
@@ -487,7 +522,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LockImage" width="1024" height="768"/>
+        <image name="LockImage" width="640" height="761"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -495,7 +530,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Cdr-jm-Cy6"/>
+        <segue reference="c9I-Xy-QAs"/>
         <segue reference="oI7-Ke-yzS"/>
-        <segue reference="awu-gZ-zVF"/>
     </inferredMetricsTieBreakers>
 </document>

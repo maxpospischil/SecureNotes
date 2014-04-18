@@ -8,6 +8,7 @@
 
 #import "SettingsTableViewController.h"
 #import "LockViewController.h"
+#import "Lock.h"
 
 @interface SettingsTableViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
@@ -15,6 +16,20 @@
 @end
 
 @implementation SettingsTableViewController
+- (IBAction)deleteAccount:(id)sender {
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Delete Account" otherButtonTitles:nil, nil];
+    
+    [actionSheet showInView:self.view];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Delete Account"]){
+        [self performSegueWithIdentifier:@"Delete Account" sender:self];
+        
+    }
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -48,13 +63,17 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 2;
+    if (section == 0){
+        return 2;
+    } else {
+        return 1;
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -62,6 +81,10 @@
     if ([segue.identifier isEqualToString:@"Change PicturePass"]) {
         [segue.destinationViewController setKindOfLock:@"CHANGE PICTUREPASS"];
         [segue.destinationViewController setUsername:self.username];
+    }
+    if ([segue.identifier isEqualToString:@"Delete Account"]) {
+        Lock *lock = [[Lock alloc] init];
+        [lock deleteUser:self.username];
     }
 }
 

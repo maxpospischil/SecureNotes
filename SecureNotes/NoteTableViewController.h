@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Login.h"
 
-@interface NoteTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface NoteTableViewController : UITableViewController <NSFetchedResultsControllerDelegate >
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
