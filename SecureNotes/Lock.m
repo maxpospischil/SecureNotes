@@ -245,7 +245,7 @@
         gridPoint.y = (int)point.y - ((int)point.y % q) + 4*r;
     }
     NSString *myPasswordString = [NSString stringWithFormat:@"x: %d, y: %d", (int)gridPoint.x, (int)gridPoint.y];
-    NSLog(@"%@", myPasswordString);
+    //NSLog(@"%@", myPasswordString);
     NSString *encrpytedPassword = [self md5Encrypt:myPasswordString];
     return encrpytedPassword;
     

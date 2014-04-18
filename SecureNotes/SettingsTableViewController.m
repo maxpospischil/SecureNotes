@@ -85,6 +85,8 @@
     if ([segue.identifier isEqualToString:@"Delete Account"]) {
         Lock *lock = [[Lock alloc] init];
         [lock deleteUser:self.username];
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        [prefs setObject:[NSString stringWithFormat:@""] forKey:@"username"];
     }
 }
 

@@ -55,7 +55,6 @@
 
 - (void)insertNewObject:(id)sender
 {
-    NSLog(@"Sender: %@", sender);
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
     Notes *newNote = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];

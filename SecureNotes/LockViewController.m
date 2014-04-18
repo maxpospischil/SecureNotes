@@ -139,7 +139,6 @@
         }
     }
     if ([segue.identifier isEqualToString:@"Edit Picture"]) {
-        NSLog(@"%@",self.username);
         [segue.destinationViewController setUsername:self.username];
     }
 }
