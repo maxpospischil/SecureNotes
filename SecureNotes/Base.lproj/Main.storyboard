@@ -416,12 +416,12 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vAf-VO-d6R">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EDO-nW-cPD">
                                 <rect key="frame" x="0.0" y="92" width="320" height="432"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -449,7 +449,7 @@
                     <connections>
                         <outlet property="dateLabel" destination="54R-Bz-59A" id="FnO-Fw-75q"/>
                         <outlet property="doneButton" destination="JdG-tq-r5B" id="rZd-th-dkE"/>
-                        <outlet property="noteText" destination="vAf-VO-d6R" id="Vhu-yP-Dz4"/>
+                        <outlet property="noteText" destination="EDO-nW-cPD" id="Vao-J7-c2q"/>
                         <outlet property="shareButton" destination="rdX-g6-hW3" id="38O-dZ-MFJ"/>
                     </connections>
                 </viewController>

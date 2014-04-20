@@ -135,7 +135,7 @@
                                              selector:@selector(editingDidBegin:)
                                                  name:UITextViewTextDidBeginEditingNotification
                                                object:nil];
-    [self configureView];
+    [self configureView];    
 }
 
 - (void)editingDidBegin:(NSNotification *)notification {
