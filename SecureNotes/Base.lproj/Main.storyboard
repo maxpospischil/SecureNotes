@@ -522,7 +522,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LockImage" width="640" height="761"/>
+        <image name="LockImage" width="640" height="880"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -8,7 +8,7 @@
 
 #import "Lock.h"
 #import <CommonCrypto/CommonDigest.h>
-#define RVALUE 12
+#define RVALUE 15
 
 
 
